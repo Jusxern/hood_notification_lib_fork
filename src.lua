@@ -1,4 +1,3 @@
-
 local NotificationLibrary = {}
 
 local AbyssGUI = Instance.new("ScreenGui")
@@ -47,7 +46,7 @@ function NotificationLibrary:Notify(Type, TitleText, Desc, Delay)
 	Warning.Position = UDim2.new(0.0258302614, 0, 0.0897435844, 0)
 	Warning.Size = UDim2.new(0, 44, 0, 49)
 	Warning.Image = icons[Type]
-	--Warning.ImageColor3 = Color3.fromRGB(241, 196, 15)
+	Warning.ImageColor3 = color[Type]
 	Warning.ScaleType = Enum.ScaleType.Fit
 
 	UICorner.CornerRadius = UDim.new(0, 20)
