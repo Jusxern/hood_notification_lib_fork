@@ -1,17 +1,21 @@
+
 local NotificationLibrary = {}
 
-local AbyssGUI = Instance.new("ScreenGui"); AbyssGUI.Name = "Abyss"; AbyssGUI.Parent = game.CoreGui; AbyssGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+local AbyssGUI = Instance.new("ScreenGui")
+AbyssGUI.Name = "Abyss"
+AbyssGUI.Parent = game.CoreGui
+AbyssGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 local colors = {
-	"Warning" = Color3.fromRGB(234, 159, 53);
-	"Info" = Color3.fromRGB(50, 131, 226);
-	"Error" = Color3.fromRGB(236, 88, 76);
-	"Success" = Color3.fromRGB(50, 195, 125)
+	["Warning"] = Color3.fromRGB(234, 159, 53);
+	["Info"] = Color3.fromRGB(50, 131, 226);
+	["Error"] = Color3.fromRGB(236, 88, 76);
+	["Success"] = Color3.fromRGB(50, 195, 125)
 }
 local icons = {
-	"Warning" = "rbxassetid://9072448788";
-	"Info" = "rbxassetid://9072944922";
-	"Error" = "rbxassetid://9072920609";
-	"Success" = "rbxassetid://9073052584"
+	["Warning"] = "rbxassetid://9072448788";
+	["Info"] = "rbxassetid://9072944922";
+	["Error"] = "rbxassetid://9072920609";
+	["Success"] = "rbxassetid://9073052584"
 }
 
 function NotificationLibrary:Notify(Type, TitleText, Desc, Delay)
